@@ -1,6 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Styles } from './styles'
 
-const App = () => <div>Hello world</div>
+import { App } from './routes'
 
-ReactDOM.render(<App />, window.document.getElementById('main'))
+ReactDOM.render(<>
+  <Styles />
+  <App />
+  </>, window.document.getElementById('main'))
