@@ -1,7 +1,7 @@
 import styled, { StyleSheetManagerProps } from 'styled-components'
 
 interface SelfPictureProps extends StyleSheetManagerProps {
-    position?: 'left' | 'center' | 'rigth';
+    position?: 'left' | 'rigth';
 }
 
 export const SelfPictureWrapper = styled.div`

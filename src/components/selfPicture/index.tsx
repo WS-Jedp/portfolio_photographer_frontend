@@ -4,7 +4,7 @@ import { SelfPictureWrapper } from './styles'
 interface SelfPictureProps {
     picture: string;
     caption?: string;
-    position?: 'left' | 'center' | 'rigth';
+    position?: 'left' | 'rigth';
     figCaption?: string;
 }
 
