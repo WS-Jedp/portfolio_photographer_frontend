@@ -9,16 +9,15 @@ import { Paragraph } from '../../components/paragraph'
 import { Featured } from '../../components/featured'
 import { Button } from '../../components/button'
 import { FeaturedCollection } from '../../components/featuredCollection'
-
+import { SelfPicture } from '../../components/selfPicture'
 
 export const Home:React.FC= () => (
   <section>
-    <FeaturedCollection 
-      to="/"  
-      name="Flow"
-      description="Keep calm and flow with the environment"
-      url={Image}
-      position="right"
+    <SelfPicture 
+      picture={Image}
+      caption="Hello world :D"
+      figCaption="Hello world again! :D"
+      position='rigth'
     />
   </section>
 )

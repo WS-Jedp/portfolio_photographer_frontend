@@ -74,6 +74,9 @@ export const FeaturedCollectionWrapper = styled.article`
   }
 
   & .featured-collection__button {
+    display: flex;
+    flex-flow: row nowrap;
+    place-items: center;
     position: absolute;
     bottom: 1.5em;
   }
