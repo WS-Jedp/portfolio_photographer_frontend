@@ -11,9 +11,10 @@ import { Button } from '../../components/button'
 import { FeaturedCollection } from '../../components/featuredCollection'
 import { SelfPicture } from '../../components/selfPicture'
 import { PortraitPicture } from '../../components/portraitPicture'
+import { PortraitCollection } from '../../components/portraitCollection'
 
 export const Home:React.FC= () => (
   <section>
-    <PortraitPicture picture={Image} title="Moments" />
+    <PortraitCollection date="2020-01-02" title="Moments" description="Hello world" image={Image} />
   </section>
 )
