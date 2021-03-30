@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdArrowForward } from 'react-icons/md'
 import { FeaturedCollectionWrapper } from './styles'
 import { Button } from '../button'
 
@@ -28,7 +29,7 @@ export const FeaturedCollection:React.FC<FeaturedCollection> = (props) => {
           }
         </p>
         <div className="featured-collection__button">
-          <Button title="Dive Into" to={to} color="white" />
+          <Button title="Dive Into" to={to} color="white" Icon={MdArrowForward} />
         </div>
       </div>
     </FeaturedCollectionWrapper>
