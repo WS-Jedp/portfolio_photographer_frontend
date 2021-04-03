@@ -1,4 +1,7 @@
 import React from 'react'
+import { HomeWrapper } from './styles'
+
+import { Layout } from '../../layout'
 
 import Image from '../../assets/image_dive_7.jpg'
 
@@ -17,7 +20,8 @@ import { PictureDetail } from '../../components/pictureDetail'
 import { Menu } from '../../components/menu'
 
 export const Home:React.FC= () => (
-  <section>
-    <Menu />
-  </section>
+  <Layout>
+    <article className="menu-content">
+    </article>
+  </Layout>
 )

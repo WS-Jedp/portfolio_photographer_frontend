@@ -2,6 +2,7 @@ import React from 'react'
 import { CoverCollectionWrapper } from './styles'
 
 import { Title } from '../title'
+import { Paragraph } from '../paragraph'
 
 
 interface CoverCollectionProps {
@@ -23,11 +24,11 @@ export const CoverCollection:React.FC<CoverCollectionProps> = ({ upTitle, downTi
 
             <div className="cover-collection__title">
                 <Title up={upTitle} down={downTitle} position="right" color="white" />
-                <p>
+                <Paragraph color="white">
                     {
                         description
                     }
-                </p>
+                </Paragraph>
             </div>
 
             <div className="cover-collection__date">

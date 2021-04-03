@@ -2,6 +2,7 @@ import styled, { StyleSheetManager } from 'styled-components'
 
 interface MenuWrapperProps extends StyleSheetManager {
     isOpen: boolean;
+    color: 'white' | 'black';
 }
 
 export const MenuWrapper = styled.menu`
@@ -12,9 +13,10 @@ export const MenuWrapper = styled.menu`
     align-items: ${(props:MenuWrapperProps) => props.isOpen === true ? 'end' : 'center'};
     justify-content: space-between;
     height: 100vh;
-    width: ${(props:MenuWrapperProps) => props.isOpen === true ? '60vw' : '60px'};
-    background-color: var(--color-black);
-    color: var(--color-white);
+    width: 100%;
+    max-width: ${(props:MenuWrapperProps) => props.isOpen === true ? '60vw' : '60px'};
+    background-color: var(--color-${(props:MenuWrapperProps) => props.color});
+    color: var(--color-${(props:MenuWrapperProps) => props.color === 'black' ? 'white' : 'black'});
     text-align: center;
     box-shadow: 2px 0 12px 3px rgba(0,0,0,.2);
     writing-mode: vertical-rl;
@@ -22,7 +24,7 @@ export const MenuWrapper = styled.menu`
     transition: .6s ease-in-out;
 
     @media (min-width:720px) {
-        width: ${(props:MenuWrapperProps) => props.isOpen === true ? '60vw' : '72px'};
+        max-width: ${(props:MenuWrapperProps) => props.isOpen === true ? '60vw' : '72px'};
     }
 
     .menu {
