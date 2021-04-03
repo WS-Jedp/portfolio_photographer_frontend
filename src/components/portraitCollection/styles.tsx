@@ -29,7 +29,6 @@ export const PortraitCollectionWrapper = styled.figure`
         justify-content: space-between;
         padding: 2rem;
         transition: .3s ease-in-out;
-        opacity: 0;
     }
 
     & .portrait-collection__date {
@@ -72,7 +71,12 @@ export const PortraitCollectionWrapper = styled.figure`
             color: var(--color-white);
             font-size: 1.2rem;
         }
-            
+        
+    }
+
+    & .portrait-collection__text, .portrait-collection__date, .portrait-collection__button {
+        transition: .6s ease-in-out;
+        opacity: 0;
     }
 
     & img {
@@ -87,7 +91,7 @@ export const PortraitCollectionWrapper = styled.figure`
 
     &:hover {
         max-width: 300px; 
-        & .portrait-collection  {
+        .portrait-collection__date, .portrait-collection__text, .portrait-collection__button  {
             opacity: 1;
         }
     }

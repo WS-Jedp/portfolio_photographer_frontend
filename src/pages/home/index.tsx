@@ -12,9 +12,10 @@ import { FeaturedCollection } from '../../components/featuredCollection'
 import { SelfPicture } from '../../components/selfPicture'
 import { PortraitPicture } from '../../components/portraitPicture'
 import { PortraitCollection } from '../../components/portraitCollection'
+import { CoverCollection } from '../../components/coverCollection'
 
 export const Home:React.FC= () => (
   <section>
-    <PortraitCollection date="2020-01-02" title="Moments" description="Hello world" image={Image} />
+    <CoverCollection picture={Image} upTitle="Hello" downTitle="World" description="Welcome to the best part of us" date="2020 - 02 - 05" />
   </section>
 )
