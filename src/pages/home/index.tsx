@@ -13,9 +13,10 @@ import { SelfPicture } from '../../components/selfPicture'
 import { PortraitPicture } from '../../components/portraitPicture'
 import { PortraitCollection } from '../../components/portraitCollection'
 import { CoverCollection } from '../../components/coverCollection'
+import { PictureDetail } from '../../components/pictureDetail'
 
 export const Home:React.FC= () => (
   <section>
-    <CoverCollection picture={Image} upTitle="Hello" downTitle="World" description="Welcome to the best part of us" date="2020 - 02 - 05" />
+    <PictureDetail title="Lost" picture={Image} date="2020-21-02" location="Switerland" />
   </section>
 )
