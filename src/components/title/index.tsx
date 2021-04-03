@@ -1,16 +1,14 @@
 import React from 'react'
 import { TitleContainer } from './styles'
 
-interface Title extends React.FC {
-  up?: string,
-  down?: string,
+interface TitleProps {
+  up: string,
+  down: string,
   position?: 'left' | 'right' | 'center',
   color?: 'white' | 'black' 
 }
 
-export const Title:React.FC<Title> = (props) =>{
-
-  const { up, down, position = 'center', color = 'black' } = props
+export const Title:React.FC<TitleProps> = ({up, down, position, color = "black"}) => {
 
   return (
     <TitleContainer position={position} color={color}>
