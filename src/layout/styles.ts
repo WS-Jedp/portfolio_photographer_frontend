@@ -15,5 +15,6 @@ export const LayoutWrapper = styled.section`
         width: 100%;
         height: auto;
         overflow: scroll-y;
+        padding: 2rem;
     }
 `

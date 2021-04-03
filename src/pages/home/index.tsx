@@ -17,11 +17,21 @@ import { PortraitPicture } from '../../components/portraitPicture'
 import { PortraitCollection } from '../../components/portraitCollection'
 import { CoverCollection } from '../../components/coverCollection'
 import { PictureDetail } from '../../components/pictureDetail'
+
+import { ContentText } from '../../components/contentText'
 import { Menu } from '../../components/menu'
 
 export const Home:React.FC= () => (
   <Layout>
     <article className="menu-content">
+      <ContentText 
+        color="black"
+        position="left"
+        upTitle="Hello"
+        downTitle="World"
+        text="Hello world, we are innovating in multiple things, come with us to the future!">
+          Hello another thing
+      </ContentText>
     </article>
   </Layout>
 )
