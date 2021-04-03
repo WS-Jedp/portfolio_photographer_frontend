@@ -1,4 +1,8 @@
-import styled from 'styled-components'
+import styled, { StyleSheetManagerProps } from 'styled-components'
+
+interface PictureDetailProps extends StyleSheetManagerProps {
+    detailed: boolean;
+}
 
 export const PictureDetailWrapper = styled.article`
     box-sizing: border-box;
@@ -7,12 +11,13 @@ export const PictureDetailWrapper = styled.article`
     flex-flow: column nowrap;
     min-width: 230px;
     width: 80%;
-    height: 70vh;
+    height: ${(props:PictureDetailProps) => props.detailed === true ? '40vh' : '70vh'};
+    transition: .3s ease-in-out;
 
     @media (min-width: 720px) {
         width: 60%;
-        max-width: 630px;        
-        height: 500px;
+        max-width: ${(props:PictureDetailProps) => props.detailed === true ? '60vh' : '630px'};
+        height: ${(props:PictureDetailProps) => props.detailed === true ? '60vh' : '500px'};
 
         .picture-detail {
             &__title {
