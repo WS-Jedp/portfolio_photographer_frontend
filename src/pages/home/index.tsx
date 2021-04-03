@@ -14,9 +14,10 @@ import { PortraitPicture } from '../../components/portraitPicture'
 import { PortraitCollection } from '../../components/portraitCollection'
 import { CoverCollection } from '../../components/coverCollection'
 import { PictureDetail } from '../../components/pictureDetail'
+import { Menu } from '../../components/menu'
 
 export const Home:React.FC= () => (
   <section>
-    <PictureDetail title="Lost" picture={Image} date="2020-21-02" location="Switerland" />
+    <Menu />
   </section>
 )
