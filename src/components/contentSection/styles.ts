@@ -2,6 +2,7 @@ import styled, { StyleSheetManagerProps } from 'styled-components'
 
 interface ContentSectionWrapperProps extends StyleSheetManagerProps{
     reverse: boolean;
+    bgColor: 'black' | 'white';
 }
 
 export const ContentSectionWrapper = styled.section`
@@ -11,6 +12,10 @@ export const ContentSectionWrapper = styled.section`
     justify-content: space-around;
     width: 100%;
     margin-bottom: 4rem;
+
+    background-color: var(--color-${(props:ContentSectionWrapperProps) => props.bgColor});
+
+    color: var(--color-${(props:ContentSectionWrapperProps) => props.bgColor == 'black' ? 'white' : 'black'});
 
     @media (min-width: 720px) {
         flex-flow: ${(props:ContentSectionWrapperProps) => props.reverse ? 'row-reverse' : 'row'}

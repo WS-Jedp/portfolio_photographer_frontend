@@ -9,7 +9,7 @@ interface FeaturedCollectionProps extends StyleSheetManagerProps {
 export const FeaturedCollectionWrapper = styled.article`
   box-sizing: border-box;
   position: relative;
-  width: 70%;
+  width: 90%;
   height: 510px;
   display: flex;
   flex-flow: column nowrap;
@@ -59,11 +59,11 @@ export const FeaturedCollectionWrapper = styled.article`
     z-index: 99;
 
     & h2 {
-      font-size: 21px;
+      font-size: 42px;
       font-style: italic;
 
       @media(min-width: 720px) {
-        font-size: 30px;
+        font-size: 54px;
       }
     }
 
