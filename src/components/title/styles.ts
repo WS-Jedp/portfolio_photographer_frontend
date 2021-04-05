@@ -13,7 +13,7 @@ export const TitleContainer = styled.div`
     font-weight: 100;
     font-style: italic;
     font-size: 54px;
-    margin-bottom: -30px;
+    margin-bottom: -10px;
     color: ${(props:PropsTitle) => (`var(--color-${props.color})`)};
   }
 

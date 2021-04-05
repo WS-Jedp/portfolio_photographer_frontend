@@ -10,5 +10,10 @@ export const ContentTextWrapper = styled.section`
 
     .content-text__children {
         margin-top: 2rem;
+        display: none;
+
+        @media (min-width: 720px) {
+            display: block;
+        }
     }
 `

@@ -15,7 +15,7 @@ export const PortraitCollectionWrapper = styled.figure`
     transition: .3s ease-in-out;
 
     @media (min-width: 720px) {
-        min-width: 270px;
+        min-width: 210px;
         height: 360px;
     }
 
