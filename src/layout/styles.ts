@@ -7,7 +7,7 @@ export const LayoutWrapper = styled.section`
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    grid-template-columns: .1fr .9fr;
+    grid-template-columns: .1fr auto;
 
     .layout-content {
         box-sizing: border-box;
@@ -18,6 +18,9 @@ export const LayoutWrapper = styled.section`
         height: auto;
         overflow-y: scroll;
         padding: 1rem;
-        
+
+        @media (min-width: 720px) {
+            padding: 2rem;
+        }
     }
 `

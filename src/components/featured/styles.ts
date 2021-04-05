@@ -7,16 +7,16 @@ export const FeaturedWrapper = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   box-sizing: border-box;
   box-shadow: 0 0 21px 9px rgba(0,0,0,.12);
   z-index: 99;
   margin: 60px 0; 
 
   @media (min-width: 720px) {
-    width: 420px;
-    height: 600px;
+    width: 320px;
+    height: 500px;
   }
 
   h3 {
@@ -68,8 +68,8 @@ export const FeaturedWrapper = styled.div`
     z-index: 99;
     
     @media (min-width: 720px) {
-      width: 360px;
-      height: 550px;
+      width: 270px;
+      height: 450px;
     }
   }
 `
