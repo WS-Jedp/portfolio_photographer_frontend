@@ -21,25 +21,22 @@ import { PictureDetail } from '../../components/pictureDetail'
 
 import { ContentText } from '../../components/contentText'
 import { ContentImage } from '../../components/contentImage'
+import { ContentSection } from '../../components/contentSection'
 import { Menu } from '../../components/menu'
 
-const FeaturedImage = <Featured location="Sweeden" url={Image} albumName="Moments" photoName="Lost" title="Lost" />
-const DownButton = <Button title="Dive Into More" to="#" Icon={MdArrowDownward} color="black" />
+import { HomePage } from '../../utils/content'
 
 export const Home:React.FC= () => (
   <Layout>
-    <article className="menu-content">
-      <ContentText 
-        color="black"
-        position="left"
-        upTitle="Hello"
-        downTitle="World"
-        text="Hello world, we are innovating in multiple things, come with us to the future!" 
+      <ContentSection 
+        main={HomePage.contentText}
+        secondary={HomePage.ContentImage}
+        reverse={true}
       />
-      <ContentImage 
-        Picture={FeaturedImage}
-        children={DownButton}
+      <ContentSection 
+        main={HomePage.contentText}
+        secondary={HomePage.ContentImage}
+        reverse={true}
       />
-    </article>
   </Layout>
 )
