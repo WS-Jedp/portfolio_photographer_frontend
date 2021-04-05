@@ -29,9 +29,8 @@ export const Home:React.FC= () => (
         position="left"
         upTitle="Hello"
         downTitle="World"
-        text="Hello world, we are innovating in multiple things, come with us to the future!">
-          Hello another thing
-      </ContentText>
+        text="Hello world, we are innovating in multiple things, come with us to the future!" 
+      />
     </article>
   </Layout>
 )
