@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdArrowDownward } from 'react-icons/md'
 import { HomeWrapper } from './styles'
 
 import { Layout } from '../../layout'
@@ -19,7 +20,11 @@ import { CoverCollection } from '../../components/coverCollection'
 import { PictureDetail } from '../../components/pictureDetail'
 
 import { ContentText } from '../../components/contentText'
+import { ContentImage } from '../../components/contentImage'
 import { Menu } from '../../components/menu'
+
+const FeaturedImage = <Featured location="Sweeden" url={Image} albumName="Moments" photoName="Lost" title="Lost" />
+const DownButton = <Button title="Dive Into More" to="#" Icon={MdArrowDownward} color="black" />
 
 export const Home:React.FC= () => (
   <Layout>
@@ -30,6 +35,10 @@ export const Home:React.FC= () => (
         upTitle="Hello"
         downTitle="World"
         text="Hello world, we are innovating in multiple things, come with us to the future!" 
+      />
+      <ContentImage 
+        Picture={FeaturedImage}
+        children={DownButton}
       />
     </article>
   </Layout>
