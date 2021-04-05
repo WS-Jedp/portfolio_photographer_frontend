@@ -10,11 +10,14 @@ export const LayoutWrapper = styled.section`
     grid-template-columns: .1fr .9fr;
 
     .layout-content {
+        box-sizing: border-box;
         display: flex;
         flex-flow: column nowrap;
+        align-items: center;
         width: 100%;
         height: auto;
-        overflow: scroll-y;
-        padding: 2rem;
+        overflow-y: scroll;
+        padding: 1rem;
+        
     }
 `
