@@ -2,12 +2,16 @@ import React, { useState } from 'react'
 import { MdMenu } from 'react-icons/md'
 import { MenuWrapper } from './styles'
 
-export const Menu:React.FC = () => {
+interface MenuProps {
+    color?: 'white' | 'black';
+}
+
+export const Menu:React.FC<MenuProps> = ({ color = 'black' }) => {
 
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
     return (
-        <MenuWrapper className="menu" isOpen={isOpen}>
+        <MenuWrapper className="menu" isOpen={isOpen} color={color}>
             <div className="menu__button" onClick={() => setIsOpen(!isOpen)}>
                 <MdMenu size="30px" />
             </div>

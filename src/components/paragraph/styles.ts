@@ -8,11 +8,11 @@ interface ParagraphProps extends StyleSheetManagerProps{
 export const ParagraphWrapper = styled.p`
   font-weight: 300;
   font-style: italic;
-  font-size: 42px;
+  font-size: 30px;
   color: ${(props:ParagraphProps) => (`var(--color-${props.color})`)};
   text-align: ${(props:ParagraphProps) => (props.position)};
 
   @media (min-width: 720px) {
-    font-size: 60px;
+    font-size: 42px;
   }
 `
