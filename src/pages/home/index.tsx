@@ -27,6 +27,7 @@ import { ContentSection } from '../../components/contentSection'
 import { ContentText } from '../../components/contentText'
 import { LastCollections } from '../../components/lastCollections'
 import { LastPictures } from '../../components/lastPictures'
+import { Footer } from '../../components/footer'
 
 export const Home:React.FC= () => {
 
@@ -60,6 +61,7 @@ export const Home:React.FC= () => {
           secondary={<LastPictures images={HomePageContent.lastPicturesJSON} color="black" />}
           reverse={true}
         />
+        <Footer />
     </Layout>
   )
 }
