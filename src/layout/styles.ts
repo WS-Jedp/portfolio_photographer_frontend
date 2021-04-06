@@ -17,10 +17,5 @@ export const LayoutWrapper = styled.section`
         width: 100%;
         height: auto;
         overflow-y: scroll;
-        padding: 1rem;
-
-        @media (min-width: 720px) {
-            padding: 2rem;
-        }
     }
 `

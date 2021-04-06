@@ -6,12 +6,18 @@ interface ContentSectionWrapperProps extends StyleSheetManagerProps{
 }
 
 export const ContentSectionWrapper = styled.section`
+    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     width: 100%;
     margin-bottom: 4rem;
+    padding: 1rem;
+
+    @media (min-width: 720px) {
+        padding: 2rem;
+    }
 
     @media (min-width: 720px) {
         margin-bottom: 8rem;

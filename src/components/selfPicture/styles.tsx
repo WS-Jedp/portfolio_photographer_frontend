@@ -8,7 +8,7 @@ export const SelfPictureWrapper = styled.div`
     display: flex;
     flex-flow: column nowrap;
     postiion: relative;
-    min-width: 200px;
+    min-width: 270px;
     width: 80%; 
     height: 510px;
     max-width: 300px;
