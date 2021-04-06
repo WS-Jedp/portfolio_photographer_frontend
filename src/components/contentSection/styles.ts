@@ -13,6 +13,10 @@ export const ContentSectionWrapper = styled.section`
     width: 100%;
     margin-bottom: 4rem;
 
+    @media (min-width: 720px) {
+        margin-bottom: 8rem;
+    }
+
     background-color: var(--color-${(props:ContentSectionWrapperProps) => props.bgColor});
 
     color: var(--color-${(props:ContentSectionWrapperProps) => props.bgColor == 'black' ? 'white' : 'black'});
