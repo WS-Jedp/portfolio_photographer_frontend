@@ -1,7 +1,7 @@
 import React from 'react'
 import { LastCollectionWrapper } from './styles'
 
-import { PortraitCollection } from '../portraitCollection'
+import { PortraitCollectionSmall } from '../portraitCollectionSm'
 
 type collection = {
     date: string;
@@ -21,7 +21,7 @@ export const LastCollections:React.FC<LastCollectionsProps> = ({ collections, co
         <LastCollectionWrapper columns={columns}>
             {
                 collections.map((el, i) => (
-                    <PortraitCollection key={i} date={el.date} image={el.image} title={el.date} description={el.description} /> 
+                    <PortraitCollectionSmall key={i} date={el.date} image={el.image} title={el.date} description={el.description} /> 
                 ))
             }
         </LastCollectionWrapper>

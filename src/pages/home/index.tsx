@@ -19,13 +19,14 @@ import { PortraitPicture } from '../../components/portraitPicture'
 import { PortraitCollection } from '../../components/portraitCollection'
 import { CoverCollection } from '../../components/coverCollection'
 import { PictureDetail } from '../../components/pictureDetail'
+import { PictureSmall } from '../../components/pictureSmall'
 
+import { HomePage as HomePageContent } from '../../utils/content'
 import { ContentImage } from '../../components/contentImage'
 import { ContentSection } from '../../components/contentSection'
 import { ContentText } from '../../components/contentText'
 import { LastCollections } from '../../components/lastCollections'
-
-import { HomePage } from '../../utils/content'
+import { LastPictures } from '../../components/lastPictures'
 
 export const Home:React.FC= () => {
 
@@ -38,33 +39,14 @@ export const Home:React.FC= () => {
   />
 
   const HomeFeaturedCollection = <FeaturedCollection url={Image} description='"Something is here about the picture"' name="Moments" to="/" position="right" />
-  const collections = [
-    {
-      date: "2020-02-04",
-      title: "Hello world",
-      description: "Hello there thsi is the description",
-      image: Image
-    },
-    {
-      date: "2020-02-04",
-      title: "Hello world",
-      description: "Hello there thsi is the description",
-      image: Image
-    },
-    {
-      date: "2020-02-04",
-      title: "Hello world",
-      description: "Hello there thsi is the description",
-      image: Image
-    },
-  ]
-  const HomeConceptualAlbumText = <ContentText color="black" position="left" upTitle="Conceptual" downTitle="Albums" text="A whole process to find the correct moment" children={<LastCollections columns collections={collections} />} />
+ 
+  const HomeConceptualAlbumText = <ContentText color="black" position="left" upTitle="Conceptual" downTitle="Albums" text="A whole process to find the correct moment" children={<LastCollections columns collections={HomePageContent.lastCollectionsJSON} />} />
 
 
   return (
     <Layout>
         <ContentSection 
-          main={HomePage.IntroductionText}
+          main={HomePageContent.IntroductionText}
           secondary={HomeIntroductionImage}
           reverse={true}
         />
@@ -74,8 +56,8 @@ export const Home:React.FC= () => {
           reverse={false}
         />
         <ContentSection 
-          main={HomePage.IntroductionText}
-          secondary={HomeFeaturedCollection}
+          main={HomePageContent.ProcessText}
+          secondary={<LastPictures images={HomePageContent.lastPicturesJSON} color="black" />}
           reverse={true}
         />
     </Layout>
